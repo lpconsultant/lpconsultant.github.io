@@ -55,17 +55,17 @@
     <header>
         <h1>{{ site.title }}</h1>
         <nav> 
-            <a href="/about.html">About</a>
-            <a href="/research.html">Research</a>
-            <a href="/teaching.html">Teaching</a>
-            <a href="/cirriculum vitea.html">Curriculum Vitae</a>
+            <a href="/savoir faire.html">About</a>
+            <a href="/compétence.html">Research</a>
+            <a href="/nous connaître.html">Teaching</a>
+            <a href="/LP consultants.html">Curriculum Vitae</a>
         </nav>
     </header>
     <main>
         {{ content }} <!-- This will display the content from your Markdown files -->
     </main>
     <footer>
-        <p>&copy; 2025 Monisha Punith</p>
+        <p>&copy; 2025 Laurent Peron</p>
     </footer>
 </body>
 </html>
