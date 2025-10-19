@@ -3,4 +3,4 @@ layout: default
 title: "Method"
 ---
 <h2>Method Page Content</h2>
-<p>mettre à jour en conséquence...</p>
+<p>mettre à jour en conséquences...</p>
