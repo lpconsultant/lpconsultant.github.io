@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LP Consultant - Expert en équipements pharmaceutiques : blistereuse, étuyeuse, ensacheuse, comprimeuse. Spécialiste en sérialisation, vision industrielle et optimisation TRS.">
-    <title>LP Consultant | Expert Équipements Pharmaceutiques & Optimisation TRS</title>
+    <meta name="description" content="Expert consultant pharmaceutique spécialisé en blistereuse, étuyeuse, ensacheuse, comprimeuse. Optimisation TRS, sérialisation, vision industrielle. Interventions France et international.">
+    <meta name="keywords" content="consultant pharmaceutique, blistereuse, étuyeuse, ensacheuse, comprimeuse, optimisation TRS, sérialisation pharmaceutique, vision industrielle, optimum setting, expert conditionnement pharmaceutique">
+    <meta name="author" content="Laurent Peron">
+    <title>LP Consultant | Expert Blistereuse, Étuyeuse & Optimisation TRS Pharmaceutique</title>
+    <link rel="canonical" href="https://lpconsultant.github.io/">
     <style>
         * {
             margin: 0;
@@ -154,6 +157,15 @@
             border-radius: 2px;
         }
 
+        .intro-text {
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+            color: var(--gray);
+            text-align: center;
+            line-height: 1.8;
+        }
+
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -237,6 +249,72 @@
             opacity: 0.9;
         }
 
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .blog-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 2rem;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blog-header h3 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-date {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .blog-excerpt {
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s;
+        }
+
+        .read-more:hover {
+            gap: 1rem;
+        }
+
         .contact-section {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
@@ -316,6 +394,7 @@
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#blog">Articles</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -329,7 +408,7 @@
                 <a href="#contact" class="cta-button">Me Contacter</a>
             </div>
             <div>
-                <img src="assets/photoLP.jpg" alt="Laurent Peron" class="profile-img">
+                <img src="assets/photoLP.jpg" alt="Laurent Peron - Expert consultant pharmaceutique" class="profile-img">
             </div>
         </div>
     </section>
@@ -353,91 +432,179 @@
 
     <section id="services" class="section">
         <h2 class="section-title">Services Professionnels</h2>
+        <p class="intro-text">
+            Fort de plus de 15 ans d'expérience dans l'industrie pharmaceutique, j'accompagne les industriels dans l'optimisation de leurs lignes de conditionnement. Mon expertise couvre l'ensemble des équipements critiques et des méthodologies d'amélioration continue pour maximiser vos performances de production.
+        </p>
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon">💊</div>
                 <h3>Équipements Pharmaceutiques</h3>
-                <p>Expertise pointue sur les équipements de conditionnement pharmaceutique : blistereuses, étuyeuses, ensacheuses et comprimeuses. Diagnostic, optimisation et amélioration des performances.</p>
+                <p>Expertise pointue sur les équipements de conditionnement pharmaceutique : blistereuses, étuyeuses, ensacheuses et comprimeuses. Diagnostic approfondi, optimisation des performances et amélioration de la fiabilité de vos lignes de production.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">🔍</div>
                 <h3>Sérialisation & Vision Industrielle</h3>
-                <p>Spécialiste des systèmes de sérialisation et de vision industrielle pour la traçabilité pharmaceutique. Conformité réglementaire et optimisation des systèmes de contrôle.</p>
+                <p>Spécialiste des systèmes de sérialisation et de vision industrielle pour la traçabilité pharmaceutique. Conformité aux réglementations européennes et internationales, optimisation des systèmes de contrôle et réduction des faux rejets.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">📈</div>
                 <h3>Optimisation du TRS</h3>
-                <p>Méthodes éprouvées pour augmenter le Taux de Rendement Synthétique de vos lignes de production. Analyse des pertes et mise en place de solutions concrètes.</p>
+                <p>Méthodes éprouvées pour augmenter le Taux de Rendement Synthétique de vos lignes de production pharmaceutique. Analyse détaillée des pertes (disponibilité, performance, qualité) et mise en place de solutions concrètes et mesurables.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">⚙️</div>
                 <h3>Optimum Setting</h3>
-                <p>Développement et mise en œuvre de l'Optimum Setting pour maximiser la performance de vos équipements. Réglages optimaux pour une production efficace et qualitative.</p>
+                <p>Développement et mise en œuvre de l'Optimum Setting pour maximiser la performance de vos équipements. Définition des réglages optimaux, standardisation des paramètres et formation de vos équipes pour une production efficace et qualitative.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">🛠️</div>
                 <h3>Résolution de Problèmes</h3>
-                <p>Approche méthodique pour identifier et résoudre les problèmes récurrents de production. Analyse des causes racines et solutions durables pour vos lignes pharmaceutiques.</p>
+                <p>Approche méthodique et structurée pour identifier et résoudre les problèmes récurrents de production. Analyse des causes racines (5 Pourquoi, Ishikawa, AMDEC) et solutions durables pour éliminer les arrêts non planifiés de vos lignes pharmaceutiques.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">📊</div>
                 <h3>Audit & Performance</h3>
-                <p>Audit complet de vos lignes de conditionnement pharmaceutique. Identification des opportunités d'amélioration et plans d'action pour augmenter votre productivité.</p>
+                <p>Audit complet de vos lignes de conditionnement pharmaceutique. Évaluation de la performance actuelle, identification des opportunités d'amélioration et plans d'action détaillés pour augmenter significativement votre productivité et réduire vos coûts.</p>
             </div>
         </div>
     </section>
 
     <section id="expertise" class="section" style="background: white;">
         <h2 class="section-title">Domaines d'Expertise</h2>
+        <p class="intro-text">
+            Ma spécialisation dans l'industrie pharmaceutique me permet d'intervenir sur l'ensemble de la chaîne de conditionnement, de la compression des comprimés jusqu'à l'emballage final, en incluant tous les systèmes de contrôle et de traçabilité.
+        </p>
         <div class="expertise-list">
             <div class="expertise-item">
                 <h4>💊 Blistereuses</h4>
-                <p>Machines de thermoformage et blisterisation pharmaceutique</p>
+                <p>Machines de thermoformage et blisterisation pharmaceutique - Optimisation des cycles et réduction des défauts</p>
             </div>
             <div class="expertise-item">
                 <h4>📦 Étuyeuses</h4>
-                <p>Équipements d'encartonnage et mise en étui</p>
+                <p>Équipements d'encartonnage et mise en étui - Amélioration des cadences et fiabilité</p>
             </div>
             <div class="expertise-item">
                 <h4>🎒 Ensacheuses</h4>
-                <p>Machines de conditionnement en sachets</p>
+                <p>Machines de conditionnement en sachets - Réglages optimaux et qualité de scellage</p>
             </div>
             <div class="expertise-item">
                 <h4>⚙️ Comprimeuses</h4>
-                <p>Presses à comprimés et machines de compression</p>
+                <p>Presses à comprimés et machines de compression - Performance et rendement matière</p>
             </div>
             <div class="expertise-item">
                 <h4>🔢 Sérialisation</h4>
-                <p>Systèmes de traçabilité et conformité réglementaire</p>
+                <p>Systèmes de traçabilité pharmaceutique et conformité réglementaire FMD/DSCSA</p>
             </div>
             <div class="expertise-item">
                 <h4>👁️ Vision Industrielle</h4>
-                <p>Systèmes de contrôle qualité et inspection automatisée</p>
+                <p>Systèmes de contrôle qualité par vision et inspection automatisée 100%</p>
             </div>
             <div class="expertise-item">
                 <h4>📈 Optimisation TRS</h4>
-                <p>Amélioration du taux de rendement synthétique</p>
+                <p>Amélioration du taux de rendement synthétique par analyse des pertes</p>
             </div>
             <div class="expertise-item">
                 <h4>🎯 Optimum Setting</h4>
-                <p>Réglages optimaux et standardisation des paramètres</p>
+                <p>Réglages optimaux et standardisation des paramètres machines</p>
             </div>
             <div class="expertise-item">
                 <h4>🔧 Résolution de Problèmes</h4>
-                <p>Analyse des causes racines et amélioration continue</p>
-            </div>
-            <div class="expertise-item">
-                <h4>📋 Conformité GMP</h4>
-                <p>Bonnes pratiques de fabrication pharmaceutique</p>
+                <p>Analyse des causes racines et méthodologies d'amélioration continue</p>
             </div>
             <div class="expertise-item">
                 <h4>🌍 Missions Internationales</h4>
-                <p>Interventions France et international</p>
+                <p>Interventions France et international - Disponibilité mondiale</p>
             </div>
             <div class="expertise-item">
                 <h4>👥 Formation Équipes</h4>
-                <p>Transfert de compétences et accompagnement</p>
+                <p>Transfert de compétences techniques et accompagnement opérationnel</p>
             </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section" style="background: var(--light);">
+        <h2 class="section-title">Articles & Conseils Experts</h2>
+        <p class="intro-text">
+            Découvrez mes analyses et recommandations pour optimiser vos lignes de conditionnement pharmaceutique.
+        </p>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-header">
+                    <h3>Comment augmenter le TRS de votre ligne de blisterisation</h3>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Octobre 2025</div>
+                    <p class="blog-excerpt">
+                        Le Taux de Rendement Synthétique (TRS) est l'indicateur clé de performance des lignes pharmaceutiques. Découvrez les 5 leviers principaux pour améliorer significativement le TRS de vos blistereuses : optimisation des changements de format, réduction des micro-arrêts, standardisation des réglages...
+                    </p>
+                    <a href="#contact" class="read-more">En savoir plus →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-header">
+                    <h3>Optimum Setting : la clé de la performance pharmaceutique</h3>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Septembre 2025</div>
+                    <p class="blog-excerpt">
+                        L'Optimum Setting permet de définir et standardiser les meilleurs réglages pour vos équipements. Cette méthodologie éprouvée réduit la variabilité, améliore la qualité et augmente la productivité. Guide complet de mise en œuvre sur vos lignes de conditionnement...
+                    </p>
+                    <a href="#contact" class="read-more">En savoir plus →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-header">
+                    <h3>Sérialisation pharmaceutique : optimiser sans compromettre la cadence</h3>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Août 2025</div>
+                    <p class="blog-excerpt">
+                        L'intégration de la sérialisation sur les lignes existantes peut impacter la performance. Découvrez les bonnes pratiques pour maintenir vos cadences tout en assurant une traçabilité 100% conforme aux exigences réglementaires européennes et internationales...
+                    </p>
+                    <a href="#contact" class="read-more">En savoir plus →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-header">
+                    <h3>Vision industrielle : réduire les faux rejets sur étuyeuse</h3>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Juillet 2025</div>
+                    <p class="blog-excerpt">
+                        Les systèmes de vision industrielle sont essentiels mais peuvent générer des faux rejets coûteux. Analyse des causes principales et solutions techniques pour optimiser vos caméras, améliorer l'éclairage et ajuster les paramètres de détection sur vos lignes d'encartonnage...
+                    </p>
+                    <a href="#contact" class="read-more">En savoir plus →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-header">
+                    <h3>Résolution de problèmes récurrents sur comprimeuse</h3>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Juin 2025</div>
+                    <p class="blog-excerpt">
+                        Les arrêts récurrents sur presses à comprimés impactent directement votre productivité. Méthodologie structurée d'analyse des causes racines et solutions éprouvées pour éliminer définitivement les problèmes de collage, friabilité et variations de poids...
+                    </p>
+                    <a href="#contact" class="read-more">En savoir plus →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-header">
+                    <h3>Audit de ligne : identifier vos opportunités d'amélioration</h3>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Mai 2025</div>
+                    <p class="blog-excerpt">
+                        Un audit structuré de vos lignes de conditionnement révèle souvent un potentiel d'amélioration de 15 à 30% du TRS. Découvrez la méthodologie complète d'audit : collecte de données, analyse des pertes, priorisation des actions et calcul du retour sur investissement...
+                    </p>
+                    <a href="#contact" class="read-more">En savoir plus →</a>
+                </div>
+            </article>
         </div>
     </section>
 
@@ -445,8 +612,8 @@
         <div class="contact-content">
             <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Contactez-moi</h2>
             <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95;">
-                Besoin d'une expertise en équipements pharmaceutiques ou d'optimisation TRS ?<br>
-                Je suis disponible pour discuter de votre projet.
+                Besoin d'un expert pour optimiser vos équipements pharmaceutiques ou améliorer votre TRS ?<br>
+                Je suis disponible pour discuter de votre projet et vous proposer des solutions adaptées.
             </p>
             <div class="contact-info">
                 <div class="contact-item">
@@ -458,7 +625,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 LP Consultant - Laurent Peron. Tous droits réservés.</p>
+        <p>&copy; 2025 LP Consultant - Laurent Peron | Expert Équipements Pharmaceutiques | Blistereuse, Étuyeuse, Ensacheuse, Comprimeuse | Optimisation TRS & Sérialisation</p>
     </footer>
 </body>
 </html>
